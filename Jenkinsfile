@@ -2,6 +2,9 @@ pipeline {
     agent {
         label 'Node1'
     }
+    tools{
+        maven 'Maven'
+    }
     environment {
         SONAR_IP = '100.53.3.163'
     }
